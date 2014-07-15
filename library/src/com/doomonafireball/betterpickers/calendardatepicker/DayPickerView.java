@@ -379,7 +379,7 @@ public abstract class DayPickerView extends ListView implements OnScrollListener
             if (child instanceof MonthView) {
                 final CalendarDay focus = ((MonthView) child).getAccessibilityFocus();
                 if (focus != null) {
-                    if (Build.VERSION.SDK_INT == Build.VERSION_CODES.JELLY_BEAN) {
+                    if (Build.VERSION.SDK_INT == Build.VERSION_CODES.JELLY_BEAN_MR1) {
                         // Clear focus to avoid ListView bug in Jelly Bean MR1.
                         ((MonthView) child).clearAccessibilityFocus();
                     }

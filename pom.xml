@@ -11,7 +11,7 @@
     <groupId>com.doomonafireball.betterpickers</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.5.3-SNAPSHOT</version>
+    <version>1.5.3-20140715-1</version>
 
     <name>android-betterpickers (Parent)</name>
     <description>Android library for better number/date/time-picker DialogFragments.</description>
@@ -65,9 +65,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <java.version>1.6</java.version>
-        <android.version>4.4_r1</android.version>
+        <android.version>4.4.2_r3</android.version>
         <android.platform>19</android.platform>
-        <android.support.version>19.0.1</android.support.version>
+        <android.support.version>20.0.0</android.support.version>
 
         <android-maven.version>3.9.0-rc.1</android-maven.version>
     </properties>
@@ -75,14 +75,14 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.google.android</groupId>
+                <groupId>android</groupId>
                 <artifactId>android</artifactId>
                 <version>${android.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.android.support</groupId>
-                <artifactId>support-v4</artifactId>
+                <groupId>android.support</groupId>
+                <artifactId>compatibility-v13</artifactId>
                 <version>${android.support.version}</version>
             </dependency>
         </dependencies>
